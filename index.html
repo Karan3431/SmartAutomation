@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Mega Cities & Sustainability</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <style>
+        :root {
+            --primary: #1b5e20; 
+            --secondary: #4caf50; 
+            --accent: #ffeb3b; 
+            --text: #212121; 
+            --text-light: #757575;
+            --background: #f5f5f5; 
+            --gray-light: #e0e0e0; 
+        }
+
+        .hero-image img {
+            animation: float 6s ease-in-out infinite;
+            margin-left: 20px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .cta-button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <style>
+        :root {
+            --primary: #4caf50; 
+            --secondary: #8bc34a; 
+            --accent: #cddc39; 
+            --text: #111827; 
+            --text-light: #6b7280;
+            --background: #f9fafb; 
+            --gray-light: #e5e7eb; 
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            min-height: 100vh;
+            padding: 120px 0 80px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .features-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="assets/image.png" alt="Sustainability" class="logo-icon">
+                AI for Sustainability
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="features.html">Solutions</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>AI for Mega Cities & Sustainability</h1>
+                <p>Empowering sustainable urban development with AI-driven solutions for waste management, traffic optimization, and energy efficiency.</p>
+                <a href="models.html" class="cta-button">Explore Models</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/image copy.png" alt="Smart City" class="floating-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="section-content">
+            <div class="section-title">
+            <h2>Our AI-Powered Solutions</h2>
+            <p>Innovative technologies for a sustainable future</p>
+            </div>
+            <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                <i class="fas fa-recycle"></i>
+                </div>
+                <h3>Smart Waste Management</h3>
+                <p>AI-powered waste sorting and recycling to reduce landfill waste and promote sustainability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                <i class="fas fa-traffic-light"></i>
+                </div>
+                <h3>Traffic Optimization</h3>
+                <p>AI-driven adaptive traffic control to reduce congestion and improve urban mobility.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Energy Efficiency</h3>
+                <p>AI-based energy consumption prediction to optimize usage and reduce carbon footprints.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-strip">
+        <div class="footer-content">
+            <div class="footer-text">
+                © 2025 AI for Sustainability | Empowering Smart Cities
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
